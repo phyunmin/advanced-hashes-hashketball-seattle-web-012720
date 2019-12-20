@@ -158,8 +158,9 @@ def most_points_scored()
       end
     end
   end
-  
-
   return playername
+end
+
+def player_with_longest_name()
   
 end
