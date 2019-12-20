@@ -180,7 +180,16 @@ def player_with_longest_name()
 end
 
 def winning_team()
+  home_score = 0
+  away_score = 0
   winningteam_name = ""
+  game_hash.each do |key, value|
+    if(key == :home)
+      pp value
+    else
+    end
+    
+  end
   
   return winningteam_name
 end
