@@ -128,12 +128,14 @@ def big_shoe_rebounds
     value.each do|name_color_players, values|
       if(name_color_players == :players)
         values.each do|player_hash|
-          if(player_hash[:shoe]==player)
-            score = player_hash[:points]
+          if(player_hash[:shoe]>maxshoesize)
+              maxshoesize = player_hash[:shoe]
+              playername = player_hash[:player_name]
           end
         end
       end
     end
   end
+  rebound = player_info(playername, "rebounds")
   return rebound
 end
