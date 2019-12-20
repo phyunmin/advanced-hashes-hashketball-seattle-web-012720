@@ -161,6 +161,25 @@ def most_points_scored()
   return playername
 end
 
+def most_steals_scored()
+
+  max = 0
+  playername = ""
+  game_hash.each do |key, value|
+    value.each do|name_color_players, values|
+      if(name_color_players == :players)
+        values.each do|player_hash|
+          if(player_hash[:steals]>max)
+              max = player_hash[:steals]
+              playername = player_hash[:player_name]
+          end
+        end
+      end
+    end
+  end
+  return playername
+end
+
 def player_with_longest_name()
   max = 0
   playername = ""
