@@ -37,9 +37,10 @@ def num_points_scored(player)
       end
     end
   end
+return score
 end
 
-return score
+
 
 
 
