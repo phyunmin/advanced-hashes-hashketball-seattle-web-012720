@@ -96,6 +96,7 @@ def player_stats(player)
         values.each do|player_hash|
           if(player_hash[:player_name]==player)
             hash = player_hash
+            hash.delete(:player_name)
           end
         end
       end
