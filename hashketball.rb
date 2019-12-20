@@ -108,13 +108,12 @@ end
 def player_info(playername, key)
   value = 0
   pp key
+  pp playername
   game_hash.each do |key, value|
     value.each do|name_color_players, values|
       if(name_color_players == :players)
         values.each do|player_hash|
           if(player_hash[:player_name]==playername)
-            pp player_hash[:player_name]
-            pp key
             value = player_hash[key]
           end
         end
