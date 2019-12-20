@@ -68,6 +68,7 @@ def team_colors(teamname)
   return teamcolors
 end
 
+def team_names
 
 
 
