@@ -213,5 +213,7 @@ def winning_team()
 end
 
 def long_name_steals_a_ton()
+  
   longestnameplayer = player_with_longest_name()
+  steals = player_info(longestnameplayer, :Steals)
 end
