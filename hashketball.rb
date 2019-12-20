@@ -24,6 +24,7 @@ def game_hash()
   }
 end
 
+require 'pp'
 
 def num_points_scored(player)
   score = 0
