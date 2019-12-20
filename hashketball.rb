@@ -106,13 +106,13 @@ def player_stats(player)
 end
 
 def player_info(playername, stat)
-  value = 0
+  output = 0
   game_hash.each do |key, value|
     value.each do|name_color_players, values|
       if(name_color_players == :players)
         values.each do|player_hash|
           if(player_hash[:player_name]==playername)
-            value = player_hash[stat]
+            output = player_hash[stat]
           end
         end
       end
