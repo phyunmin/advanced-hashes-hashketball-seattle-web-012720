@@ -185,7 +185,9 @@ def winning_team()
   winningteam_name = ""
   game_hash.each do |key, value|
     if(key == :home)
-      pp value
+      value.each do |player_hash|
+        home_score+=player_hash[:points]
+      end
     else
     end
     
