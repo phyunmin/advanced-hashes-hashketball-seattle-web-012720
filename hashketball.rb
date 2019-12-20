@@ -80,7 +80,9 @@ def player_numbers(teamname)
   teamnumbers = []
   game_hash.each do |key, value|
     if(value[:team_name] == teamname)
-      pp value
+      value[:players].each do|values|
+        teamnumbers << values[:number]
+      end
     end
   end
   return teamnumbers
