@@ -231,7 +231,7 @@ def winning_team()
   return winningteam_name
 end
 
-def long_name_steals_a_ton()
+def long_name_steals_a_ton?()
   
   longestnameplayer = player_with_longest_name()
   moststealplayer = most_steals_scored()
