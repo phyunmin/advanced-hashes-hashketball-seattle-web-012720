@@ -113,7 +113,7 @@ def player_info(playername, key)
         values.each do|player_hash|
           if(player_hash[:player_name]==playername)
             pp player_hash[:player_name]
-            pp player_hash[key]
+            pp player_hash[:rebounds]
             value = player_hash[key]
           end
         end
