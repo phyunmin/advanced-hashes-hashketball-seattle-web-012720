@@ -118,7 +118,7 @@ def player_info(playername, stat)
       end
     end
   end
-  return value
+  return output
 end
 
 def big_shoe_rebounds()
