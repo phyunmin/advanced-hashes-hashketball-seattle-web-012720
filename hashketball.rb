@@ -105,7 +105,7 @@ def player_stats(player)
   return hash
 end
 
-def player_info(key, value)
+def player_info(playername, key)
   rebound = 0
   game_hash.each do |key, value|
     value.each do|name_color_players, values|
