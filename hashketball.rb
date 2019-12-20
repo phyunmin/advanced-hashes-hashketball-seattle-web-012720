@@ -196,15 +196,13 @@ def winning_team()
       value.each do|name_color_players, values|
         if(name_color_players == :players)
           values.each do |player_hash|
-            pp player_hash[:points]
+            away_score = away_score + player_hash[:points]
           end
         end
       end
     end
   end
-pp home_score
 
-  
   if(home_score>away_score)
     winningteam_name = game_hash[:home][:team_name]
   else
