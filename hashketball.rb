@@ -188,7 +188,7 @@ def winning_team()
       value.each do|name_color_players, values|
         if(name_color_players == :players)
           values.each do |player_hash|
-            home_score+=player_hash[:points]
+
           end
         end
       end
@@ -196,7 +196,7 @@ def winning_team()
       value.each do|name_color_players, values|
         if(name_color_players == :players)
           value.each do |player_hash|
-            away_score+=player_hash[:points]
+
           end
         end
       end
