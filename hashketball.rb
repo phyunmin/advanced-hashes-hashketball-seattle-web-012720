@@ -58,6 +58,9 @@ def shoe_size(player)
   return size
 end
 
+def team_colors(teamname)
+  teamcolors = []
+end
 
 
 
