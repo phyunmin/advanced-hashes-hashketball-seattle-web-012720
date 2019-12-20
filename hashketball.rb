@@ -32,6 +32,7 @@ def num_points_scored(player)
     value.each do|name_color_players, values|
       if(name_color_players == :players)
         values.each do|player_keys, player_values|
+        pp player_values
           if(player_keys[:player_name]==player)
             score = player_keys[:points]
           end
