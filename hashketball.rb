@@ -111,7 +111,7 @@ def player_info(playername, key)
     value.each do|name_color_players, values|
       if(name_color_players == :players)
         values.each do|player_hash|
-          if(player_hash[:player_name]==player)
+          if(player_hash[:player_name]==playername)
             score = player_hash[:points]
           end
         end
