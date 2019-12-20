@@ -121,7 +121,7 @@ def player_info(playername, key)
   return value
 end
 
-def big_shoe_rebounds
+def big_shoe_rebounds()
   rebound = 0
   maxshoesize = 0
   playername = ""
