@@ -105,14 +105,14 @@ def player_stats(player)
   return hash
 end
 
-def player_info(playername, keys)
+def player_info(playername, stat)
   value = 0
   game_hash.each do |key, value|
     value.each do|name_color_players, values|
       if(name_color_players == :players)
         values.each do|player_hash|
           if(player_hash[:player_name]==playername)
-            value = player_hash[key]
+            value = player_hash[stat]
           end
         end
       end
