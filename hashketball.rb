@@ -105,6 +105,22 @@ def player_stats(player)
   return hash
 end
 
+def player_info(key, value)
+  rebound = 0
+  game_hash.each do |key, value|
+    value.each do|name_color_players, values|
+      if(name_color_players == :players)
+        values.each do|player_hash|
+          if(player_hash[:player_name]==player)
+            score = player_hash[:points]
+          end
+        end
+      end
+    end
+  end
+  return rvalue
+end
+
 def big_shoe_rebounds
   rebound = 0
   game_hash.each do |key, value|
