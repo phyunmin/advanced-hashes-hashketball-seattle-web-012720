@@ -123,6 +123,7 @@ end
 
 def big_shoe_rebounds
   rebound = 0
+  maxshoesize = 0
   game_hash.each do |key, value|
     value.each do|name_color_players, values|
       if(name_color_players == :players)
