@@ -132,8 +132,6 @@ def big_shoe_rebounds()
           if(player_hash[:shoe]>maxshoesize)
               maxshoesize = player_hash[:shoe]
               playername = player_hash[:player_name]
-              pp maxshoesize
-              pp playername
           end
         end
       end
