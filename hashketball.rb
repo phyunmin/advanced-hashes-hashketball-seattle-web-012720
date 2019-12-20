@@ -125,6 +125,7 @@ end
 
 def big_shoe_rebounds()
   rebound = 0
+  reboundkey = :rebounds
   maxshoesize = 0
   playername = ""
   game_hash.each do |key, value|
