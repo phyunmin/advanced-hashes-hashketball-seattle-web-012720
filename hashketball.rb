@@ -25,9 +25,21 @@ def game_hash()
 end
 
 
+def num_points_scored(player)
+  game_hash.each do |key, value|
+    value.each do|name_color_players, values|
+      if(name_color_players == players)
+        values.each do|player_keys, player_values|
+          if(player_keys==player)
+            score = points
+          end
+        end
+      end
+    end
+  end
+end
 
-
-
+return score
 
 
 
