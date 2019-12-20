@@ -112,8 +112,6 @@ def player_info(playername, stat)
       if(name_color_players == :players)
         values.each do|player_hash|
           if(player_hash[:player_name]==playername)
-            pp player_hash[:player_name]
-            pp player_hash[stat]
             value = player_hash[stat]
           end
         end
