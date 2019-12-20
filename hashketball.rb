@@ -30,9 +30,9 @@ def num_points_scored(player)
   score = 0
   game_hash.each do |key, value|
     value.each do|name_color_players, values|
-    pp values
       if(name_color_players == :players)
         values.each do|player_keys, player_values|
+        pp player_keys
           if(player_keys[:player_name]==player)
             score = player_keys[:points]
           end
