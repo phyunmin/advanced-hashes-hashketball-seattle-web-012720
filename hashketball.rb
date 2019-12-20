@@ -195,7 +195,7 @@ def winning_team()
     else
       value.each do|name_color_players, values|
         if(name_color_players == :players)
-          value.each do |player_hash|
+          values.each do |player_hash|
             pp player_hash[:points]
           end
         end
