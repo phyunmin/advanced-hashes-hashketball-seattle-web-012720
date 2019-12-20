@@ -150,8 +150,8 @@ def most_points_scored()
     value.each do|name_color_players, values|
       if(name_color_players == :players)
         values.each do|player_hash|
-          if(player_hash[:shoe]>maxshoesize)
-              max = player_hash[:shoe]
+          if(player_hash[:points]>max)
+              max = player_hash[:points]
               playername = player_hash[:player_name]
           end
         end
