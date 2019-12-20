@@ -182,5 +182,5 @@ end
 def winning_team()
   winningteam_name = ""
   
-  return playername
+  return winningteam_name
 end
