@@ -141,3 +141,7 @@ def big_shoe_rebounds()
   rebound = player_info(playername, :rebounds)
   return rebound
 end
+
+def most_points_scored()
+  
+end
