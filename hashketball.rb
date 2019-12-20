@@ -42,6 +42,7 @@ def num_points_scored(player)
   return score
 end
 
+def shoe_size(player)
 
 
 
