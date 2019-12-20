@@ -189,6 +189,9 @@ def winning_team()
         home_score+=player_hash[:points]
       end
     else
+      value.each do |player_hash|
+        away_score+=player_hash[:points]
+      end
     end
     
   end
