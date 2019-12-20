@@ -76,4 +76,13 @@ def team_names
   return teamnames
 end
 
+def player_numbers(teamname)
+  teamnumbers = []
+  game_hash.each do |key, value|
+    if(value[:team_name] == teamname)
+      pp value
+    end
+  end
+  return teamnumbers
+end
 
