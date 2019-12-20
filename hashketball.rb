@@ -202,8 +202,7 @@ def winning_team()
       end
     end
   end
-  pp home_score
-  pp away_score
+
   
   if(home_score>away_score)
     winningteam_name = game_hash[:home][:team_name]
