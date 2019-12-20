@@ -88,3 +88,6 @@ def player_numbers(teamname)
   return teamnumbers
 end
 
+def player_stats(player)
+
+end
