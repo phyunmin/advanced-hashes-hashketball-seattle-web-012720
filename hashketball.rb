@@ -179,6 +179,8 @@ def player_with_longest_name()
   return playername
 end
 
-def winning_team
+def winning_team()
+  winningteam_name = ""
   
+  return playername
 end
