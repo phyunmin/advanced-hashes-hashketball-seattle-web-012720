@@ -169,7 +169,7 @@ def player_with_longest_name()
       if(name_color_players == :players)
         values.each do|player_hash|
           if(player_hash[:player_name].length>max)
-              max = player_hash[:player_name]
+              max = player_hash[:player_name].length
               playername = player_hash[:player_name]
           end
         end
