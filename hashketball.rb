@@ -62,7 +62,7 @@ def team_colors(teamname)
   teamcolors = []
   game_hash.each do |key, value|
     value.each do|name_color_players, values|
-      pp name_color_players
+      pp values
       
     end
   end
